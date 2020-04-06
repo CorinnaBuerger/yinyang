@@ -30,7 +30,7 @@ def yin(diameter, color_1, color_2):
     dot(dot_dia, color_2)
     jump(radius_2, 270)
 
-def yinyang(diameter, color_1, color_2):
+def yinyang(diameter, color_1 = "black", color_2 = "white"):
     yin(diameter, color_1, color_2)
     home()
     left(180)
@@ -38,4 +38,4 @@ def yinyang(diameter, color_1, color_2):
     hideturtle()
 
 if __name__ == "__main__":
-    yinyang(400, "white", "black")    
+    yinyang(400)    
